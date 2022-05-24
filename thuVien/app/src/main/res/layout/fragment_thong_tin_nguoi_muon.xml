@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Thông tin người mượn"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/blue"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdNguoiMoi"
+            android:checked="false"
+            android:text="Thành viên mới"
+            android:layout_marginLeft="40dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdNguoiCu"
+            android:checked="true"
+            android:text="Thành viên cũ"
+            android:layout_marginLeft="70dp"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+        android:visibility="invisible"
+        android:text="Tên người mượn:"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/radioGroup"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTen"
+        android:visibility="invisible"
+        android:hint="Nhập tên người mượn"
+        android:layout_below="@id/tvTen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDiaChi"
+        android:visibility="invisible"
+        android:text="Nhập địa chỉ:"
+        android:layout_below="@id/edTen"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDiaChi"
+        android:visibility="invisible"
+        android:hint="Nhập địa chỉ người mượn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoDienThoai"
+        android:text="Số điện thoại :"
+        android:layout_below="@id/edDiaChi"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edSoDienThoai"
+        android:visibility="invisible"
+        android:hint="Nhập số điện thoại người nhận"
+        android:layout_below="@id/tvSoDienThoai"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCMND"
+        android:visibility="invisible"
+        android:layout_below="@id/edSoDienThoai"
+        android:layout_marginTop="5dp"
+        android:text="CMND/CCCD:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edCMND"
+        android:visibility="invisible"
+        android:layout_below="@id/tvCMND"
+        android:hint="Nhập cmnd hoặc cccd người mượn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMaThanhVien"
+        android:visibility="visible"
+        android:layout_below="@id/radioGroup"
+        android:text="Mã thành viên:"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edMaThanhVien"
+        android:hint="Nhập mã thành viên"
+        android:layout_below="@id/tvMaThanhVien"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnXacNhan"
+        android:text="Xác nhận"
+        android:layout_below="@id/edCMND"
+        android:background="@drawable/my_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"/>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mTrangChu"
+        android:title="Danh sách"
+        android:icon="@drawable/ic_list"/>
+
+    <item android:id="@+id/mMuonSach"
+        android:title="Mượn trả"
+        android:icon="@drawable/ic_borrow_book"/>
+
+    <item android:id="@+id/mQuanLi"
+        android:title="Quản lí kho"
+        android:icon="@drawable/ic_agent"/>
+</menu>

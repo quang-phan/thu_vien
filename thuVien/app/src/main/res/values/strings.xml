@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">thuVien</string>
+    <string-array name="fragment2_search">
+        <item>Tên sách</item>
+        <item>Tác giả</item>
+        <item>Chủ đề</item>
+        <item>Nhà xuất bản</item>
+    </string-array>
+</resources>

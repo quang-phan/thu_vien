@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Thông tin của bạn"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+        android:text="Tên: "
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/edTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTen"
+        android:text="Phan Quang"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDiaChi"
+        android:text="Địa chỉ:"
+        android:layout_below="@id/edTen"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDiaChi"
+        android:hint="Nhập địa chỉ vào đây" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoDienThoai"
+        android:text="Số điện thoại:"
+        android:layout_below="@id/edDiaChi"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edSoDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSoDienThoai"
+        android:hint="Nhập số điện thoại" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCMND"
+        android:text="Chứng minh nhân dân:"
+        android:layout_below="@id/edSoDienThoai"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/edCMND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCMND"
+        android:text="0232341234"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnCapNhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edCMND"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="@color/blue"
+        android:text="Cập nhật"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

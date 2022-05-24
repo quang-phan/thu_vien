@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp"
+    tools:context=".secondActivity.thanhVienMoi.ThemThanhVienMoiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Thông tin tài khoản thành viên"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUn"
+        android:text="Tên tài khoản: "
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:layout_alignBottom="@id/tvUn"
+        android:layout_toRightOf="@id/tvUn"
+        android:text="1234567890"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvpw"
+        android:layout_below="@id/tvUsername"
+        android:text="Mật khẩu: "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:layout_alignBottom="@id/tvpw"
+        android:layout_alignLeft="@id/tvUsername"
+        android:text="123456"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnXacNhan"
+        android:background="@drawable/my_button"
+        android:text="Xác nhận"
+        android:layout_below="@id/tvPassword"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

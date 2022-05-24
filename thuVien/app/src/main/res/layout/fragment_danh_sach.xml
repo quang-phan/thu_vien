@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Danh sách người mượn"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+        android:text="Tên người mượn: "
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvTitle"/>
+
+    <EditText
+        android:id="@+id/edTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTen"
+        android:hint="Nhập tên người mượn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDauSach"
+        android:layout_below="@id/edTen"
+
+        android:layout_marginTop="5dp"
+        android:text="Tên đầu sách: "/>
+
+    <EditText
+        android:id="@+id/edDauSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDauSach"
+        android:hint="Nhập tên đầu sách" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNgay"
+        android:text="Ngày mượn:"
+        android:layout_below="@id/edDauSach"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/tvNgay">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edFromdate"
+            android:hint="từ ngày"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edToDate"
+            android:hint="đến ngày"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTimKiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="@color/blue"
+        android:text="Tìm"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTimKiem"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
+</ScrollView>

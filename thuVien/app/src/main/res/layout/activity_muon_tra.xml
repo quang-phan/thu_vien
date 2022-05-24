@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp"
+    tools:context=".secondActivity.muonTra.MuonTraActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTenLable"
+        android:text="Tên thành viên: "
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+        android:layout_toRightOf="@id/tvTenLable"
+        android:layout_alignBottom="@id/tvTenLable"
+        android:text="Vu Thi V"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSdtLable"
+        android:layout_below="@id/tvTenLable"
+        android:text="Số điện thoại: "
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSdt"
+        android:layout_alignBottom="@id/tvSdtLable"
+        android:layout_alignLeft="@id/tvTen"
+        android:text="1234"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSachMuon"
+        android:layout_below="@id/tvSdt"
+        android:text="Sách đã mượn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/recyclerViewDaMuon"
+        android:layout_below="@id/tvSachMuon"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvKhoSach"
+        android:layout_below="@id/recyclerViewDaMuon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Kho sách"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:queryHint="Nhập tên sách"
+        android:layout_below="@id/tvKhoSach"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewKhoSach"
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

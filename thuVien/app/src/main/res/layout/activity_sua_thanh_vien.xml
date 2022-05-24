@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secondActivity.suaThanhVien.SuaThanhVienActivity"
+    android:paddingLeft="7dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Thông tin thành viên"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+
+        android:text="Tên người mượn:"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvTitle"/>
+
+    <EditText
+        android:id="@+id/edTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tvTen"
+        android:hint="Nhập tên người mượn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDiaChi"
+        android:text="Nhập địa chỉ:"
+        android:layout_below="@id/edTen"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDiaChi"
+        android:hint="Nhập địa chỉ người mượn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoDienThoai"
+        android:text="Số điện thoại :"
+        android:layout_below="@id/edDiaChi"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edSoDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSoDienThoai"
+        android:hint="Nhập số điện thoại người nhận" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCMND"
+        android:layout_below="@id/edSoDienThoai"
+        android:layout_marginTop="5dp"
+        android:text="CMND/CCCD:"/>
+
+    <EditText
+        android:id="@+id/edCMND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCMND"
+        android:hint="Nhập cmnd hoặc cccd người mượn" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edCMND"
+        android:layout_marginTop="5dp"
+        android:text="Tài khoản: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTaiKhoan"
+        android:layout_toRightOf="@id/tvUsername"
+        android:text="234"
+        android:layout_alignBottom="@id/tvUsername"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:text="Mật khẩu: "
+        android:layout_below="@id/tvUsername"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:id="@+id/edMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassword"
+        android:hint="Nhập mật khẩu vào đây" />
+
+    <Button
+        android:id="@+id/btnCapNhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edMatKhau"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="@color/blue"
+        android:text="Cập nhật"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+</ScrollView>

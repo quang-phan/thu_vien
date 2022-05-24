@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/img_person"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMaThanhVien"
+        android:text="1234"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTenThanhVien"
+        android:layout_below="@id/tvMaThanhVien"
+        android:text="Kieu Vy"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTenDauSach"
+        android:layout_below="@id/tvTenThanhVien"
+        android:text="Giai tich"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNgayMuon"
+        android:text="22/05/2022"
+        android:layout_below="@id/tvTenDauSach"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNgayConLai"
+        android:layout_alignParentRight="true"
+        android:text="Con 23 ngay"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

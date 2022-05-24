@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+        android:text="Tên sách:"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTen"
+        android:hint="Nhập tên sách"
+        android:layout_below="@id/tvTen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTacGia"
+        android:text="Tên tác giả:"
+        android:layout_below="@id/edTen"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTacGia"
+        android:hint="Nhập tên tác giả vào đây"
+        android:layout_below="@id/tvTacGia"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChuDe"
+        android:text="Chủ đề:"
+        android:layout_below="@id/edTacGia"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edChuDe"
+        android:hint="Nhập tên chủ đề"
+        android:layout_below="@id/tvChuDe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGia"
+        android:text="Giá Sách:"
+        android:layout_below="@id/edChuDe"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edGia"
+        android:layout_below="@id/tvGia"
+        android:hint="Nhập giá của sách"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGhiChu"
+        android:text="Ghi chú:"
+        android:layout_below="@id/edGia"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edGhiChu"
+        android:layout_below="@id/tvGhiChu"
+        android:hint="Nhập ghi chú vào đây"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoLuong"
+        android:text="Số lượng:"
+        android:layout_below="@id/edGhiChu"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edSoLuong"
+        android:text="1"
+        android:hint="Nhập số lượng"
+        android:layout_below="@id/tvSoLuong"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnThem"
+        android:text="Thêm"
+        android:background="@drawable/my_button"
+        android:layout_below="@id/edSoLuong"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btnThem"/>
+</RelativeLayout>
+</ScrollView>
